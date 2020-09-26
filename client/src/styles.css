@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+  color: #2199df;
+  text-decoration: unset;
+}
+
+ul {
+  margin-left: 5rem;
+  list-style-position: inside;
+
+}
+
+button,
+input[type="submit"] {
+  border: none;
+  background: none;
+  color: unset;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/* general */
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 1rem;
+  background-color: #fff6f6;
+  background-image: url("https://www.transparenttextures.com/patterns/redox-02.png");
+}
+
+.page {
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+/* header */
+
+#header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e02525;
+}
+#header .title {
+  margin: 0;
+  padding: 0 1rem;
+  color: #ffffff;
+  font-family: "Architects Daughter", cursive;
+}
+#header .auth-options {
+  height: 100%;
+  display: flex;
+}
+#header .auth-options button {
+  padding: 0 1rem;
+  background-color: #b91b1b;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+#header .auth-options button:hover {
+  background-color: #be3a3a;
+}
+.home-login-button{
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #b91b1b;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+.home-login-button:hover{
+ background-color: #be3a3a;
+}
+/* form */
+.form label,
+.form input {
+  display: block;
+  text-align: left;
+}
+.form input {
+  margin-bottom: 1rem;
+}
+.form label {
+  margin-bottom: 0.2rem;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+  width: 100%;
+  padding: 0.3rem;
+  border: 1px solid #c2c2c2;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  font-size: 1.1rem;
+}
+.form input:focus {
+  border: 1px solid #50a4e9;
+  box-shadow: inset 0px 0px 5px rgba(38, 142, 228, 0.5);
+  outline: none;
+}
+.form input[type="submit"] {
+  
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #6aa051;
+  border-radius: 8px;
+  background-color: #c8ecb7;
+  font-size: 1.1rem;
+}
+
+/* error */
+.error-notice{
+   margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid #e07c7c;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8d6d6;
+}
+.error-notice button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #df4343;
+  color: #ffffff;
+}
+
+/* Todo list */
+.todo-div {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #ffebeb;
+  /* background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png"); */
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
+  padding-top: 0.5rem;
+  min-height: 500px;
+  border-radius: 30px;
+  border: 3px solid;
+  box-shadow: 4px 3px 7px 2px #00000040;
+  border-color: #b91b1b;
+  box-sizing: border-box;
+}
+.heading { 
+  width: 50%;
+  margin: 1.2rem auto ;
+  transform: rotate(2deg);
+  padding: 0.2rem 1.2rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  background-color: #b91b1b;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.itemInput{
+  box-sizing: border-box;
+  background: transparent;
+  padding: 0.7rem;
+  border-bottom-right-radius: 15px 3px;
+  border-bottom-left-radius: 3px 15px;
+  border: solid 3px transparent;
+  border-bottom: dashed 3px #b91b1b;
+  font-size: 1.2rem;
+  color: #3d3b3b;
+  width: 70%;
+  margin-bottom: 20px;
+}
+.itemInput:focus{
+  outline: transparent;
+}
+.itemButton{
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  background-color: #b91b1b;
+  
+}
+.buttonSpan{
+  display: block;
+  color: #fdfbfb;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  
+}
+li {
+  text-align: left;
+  position: relative;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: #3d3b3b;
+}
+
+/* media queries */
+
+@media screen and (max-width: 550px) {
+  #header .title {
+    font-size: 1.2rem;
+  }
+  #header .auth-options button {
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+  }
+}
